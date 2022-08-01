@@ -1,5 +1,6 @@
 <template>
   <div>login page</div>
+  <p>我是登录页</p>
   <button class="login-btn" @click="login">登录</button>
 </template>
 
