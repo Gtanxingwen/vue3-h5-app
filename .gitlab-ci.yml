@@ -62,7 +62,6 @@ deploy-job:
     - sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no $USERNAME@$HOST rm -rf $UPLOADDIR/backup/$BACKUPDIR # 删除原有备份文件(仅在生产环境)
     - sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no $USERNAME@$HOST mv $UPLOADDIR/$PRODDIR/ $UPLOADDIR/backup/$BACKUPDIR/ # 删除原有文件 备份原本的代码(仅在生产环境)
     - sshpass -p $PASSWORD scp -o StrictHostKeyChecking=no -r ./$BUILDDIR/. $USERNAME@$HOST:$UPLOADDIR/dist # 将打包完成的文件复制到目标服务器
-    - sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no $USERNAME@$HOST mv $UPLOADDIR/dist $UPLOADDIR/$PRODDIR # 将目标文件改为服务端真正文件
     - echo "完成更新👏👏👏"
   after_script:
     - echo "完成更新👏👏👏"

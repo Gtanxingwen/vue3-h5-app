@@ -1,6 +1,6 @@
 <template>
   <div>login page</div>
-  <p>我是登录页</p>
+  <p>我是登录页 2022/08/02</p>
   <button class="login-btn" @click="login">登录</button>
 </template>
 
