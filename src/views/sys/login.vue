@@ -1,6 +1,13 @@
 <template>
   <div>login page</div>
   <p>我是登录页 2022/08/02</p>
+  <ul>
+    <li>vue3/vite2/typescript 等前端开发技术</li>
+    <li>axios 开箱即用</li>
+    <li>store 已内置</li>
+    <li>支持移动端适配（采用vw适配）</li>
+    <li>支持svg雪碧图</li>
+  </ul>
   <button class="login-btn" @click="login">登录</button>
 </template>
 
