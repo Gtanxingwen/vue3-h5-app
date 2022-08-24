@@ -1,6 +1,6 @@
 <template>
   <div>login page</div>
-  <p>我是登录页 2022/08/02</p>
+  <p>我是登录页 {{ Date.now().toLocaleString() }}</p>
   <ul>
     <li>vue3/vite2/typescript 等前端开发技术</li>
     <li>axios 开箱即用</li>
