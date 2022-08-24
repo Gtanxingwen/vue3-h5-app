@@ -1,8 +1,10 @@
+import 'virtual:windi.css';
 // 注册svg雪碧图
 import 'virtual:svg-icons-register';
+
 import { createApp } from 'vue';
-// 保证normalize.css 在最前面
-import './assets/css/normalize.css';
+// 保证normalize.css 在最前面：windicss引入后就不需要normalize.css
+// import './assets/css/normalize.css';
 import './assets/scss/global.css';
 
 import App from './App.vue';

@@ -10,6 +10,7 @@ import { configStyleImportPlugin } from './styleImport';
 import { configVisualizerConfig } from './visualizer';
 import { configImageminPlugin } from './imagemin';
 import { configSvgIconsPlugin } from './svgSprite';
+import { configWindiCssPlugin } from './windicss';
 
 export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
   const {
@@ -47,6 +48,9 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
 
   // vite-plugin-svg-icons 用于生成 svg 雪碧图.
   vitePlugins.push(configSvgIconsPlugin(isBuild));
+
+  // vite-plugin-windicss
+  vitePlugins.push(configWindiCssPlugin());
 
   // vite-plugin-style-import
   vitePlugins.push(configStyleImportPlugin(isBuild));

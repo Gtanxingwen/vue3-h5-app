@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <div>dashboard</div>
+    <div class="font-bold">dashboard</div>
     <div> 使用Svg Icon 雪碧图 </div>
     <SvgIcon name="trash" />
   </div>
