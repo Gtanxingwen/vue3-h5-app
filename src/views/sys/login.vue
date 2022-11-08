@@ -16,8 +16,8 @@
   <button class="bg-[hsl(211.7,81.9%,69.6%)]">colors2</button>
 
   <!-- grid template -->
-  <div class="grid-cols-[auto,1fr,30px]">grid template</div>
-  <button class="login-btn" @click="login">登录</button>
+  <div class="grid-cols-[auto,1fr,30px]"> grid template</div>
+  <button class="login-btn" @click="login"> 登录 </button>
 </template>
 
 <script lang="ts">
