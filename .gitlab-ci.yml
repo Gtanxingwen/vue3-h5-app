@@ -35,7 +35,7 @@ install-job:
       - dev
   script:
     - echo "开始install🔥🔥🔥"
-    - if [ ! -d "./node_modules/" ];then   npm install;   else   echo "缓存存在,跳过install"; fi
+    - if [ ! -d "./node_modules/" ];then   yarn install;   else   echo "缓存存在,跳过install"; fi
     - echo "完成install🔥🔥🔥"
   tags:
     - test
