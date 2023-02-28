@@ -7,6 +7,7 @@
     <li>store 已内置</li>
     <li>支持移动端适配（采用vw适配）</li>
     <li>支持svg雪碧图</li>
+    <li>测试</li>
   </ul>
   <!-- sizes and positions -->
   <div class="p-5px mt-[0.3px]">sizes and positions</div>
