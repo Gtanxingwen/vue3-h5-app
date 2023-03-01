@@ -1,7 +1,6 @@
 import type { UserConfig, ConfigEnv } from 'vite';
 import pkg from './package.json';
 import dayjs from 'dayjs';
-import px2vp from 'postcss-px2vp';
 import { loadEnv } from 'vite';
 import { resolve } from 'path';
 import { createProxy } from './build/vite/proxy';
@@ -91,7 +90,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     css: {
       postcss: {
         plugins: [
-          px2vp({
+          require('postcss-px2vp')({
             viewportWidth: 750,
           }),
         ],

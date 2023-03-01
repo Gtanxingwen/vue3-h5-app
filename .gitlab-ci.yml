@@ -47,7 +47,7 @@ build-job:
     - dev
   script:
     - echo "开始代码打包💪💪💪"
-    - npm run build
+    - pnpm build
     - echo "完成代码打包💪💪💪"
   tags:
     - test
