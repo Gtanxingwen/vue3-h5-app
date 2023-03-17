@@ -1,5 +1,5 @@
 <template>
-  <div>login page</div>
+  <div>login page 更新</div>
   <p>我是登录页 {{ now }}</p>
   <ul>
     <li>vue3/vite4/typescript 等前端开发技术</li>
