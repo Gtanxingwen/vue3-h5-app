@@ -1,4 +1,5 @@
 import { CacheTypeEnum } from '/@/enums/cacheEnum';
+import { SessionTimeoutProcessingEnum } from '/@/enums/appEnum';
 export interface GlobConfig {
   // Site title
   title: string;
